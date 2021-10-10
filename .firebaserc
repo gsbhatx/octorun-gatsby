@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "codebee-281912"
+  },
+  "targets": {
+    "codebee-281912": {
+      "hosting": {
+        "octorun": [
+          "public"
+        ]
+      }
+    }
+  }
+}
