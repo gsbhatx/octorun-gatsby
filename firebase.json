@@ -1,11 +1,11 @@
 {
-  "hosting": {
+  "hosting": [{
+    "target":"octorun",
     "public": "public",
-    "target": "octorun",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ]
-  }
+  }]
 }
