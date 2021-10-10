@@ -5,17 +5,17 @@ name: Deploy to Firebase Hosting on PR
 'on': pull_request
 jobs:
   build:
-  name: Build
-  runs-on: ubuntu-latest
-  steps:
-    - name: Checkout Repo
-      uses: actions/checkout@master
-    - name: Install Dependencies
-      run: yarn
-    - name: Build
-      run: yarn build
-    - name: Archive Production Artifact
-      uses: actions/upload-artifact@master
-      with:
-        name: public
-        path: public
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+      - name: Install Dependencies
+        run: yarn
+      - name: Build
+        run: yarn build
+      - name: Archive Production Artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: public
+          path: public
