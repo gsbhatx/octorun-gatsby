@@ -5,7 +5,9 @@ import SEO from './Seo';
 
 const Layout = ({ children }) => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
+    <div
+      style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}
+    >
       <SEO />
       <header className="py-1">
         <nav className="navbar navbar-expand-lg navbar-light">
