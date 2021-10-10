@@ -5,7 +5,7 @@ import SEO from './Seo';
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
       <SEO />
       <header className="py-1">
         <nav className="navbar navbar-expand-lg navbar-light">
@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
             <Link className="navbar-brand" to="/">
               <img src={'/octorunLogo.png'} width="104" height="84" alt="" />
             </Link>
-            <button
+            {/* <button
               className="navbar-toggler"
               type="button"
               data-toggle="collapse"
@@ -23,12 +23,12 @@ const Layout = ({ children }) => {
               aria-label="Toggle navigation"
             >
               <span className="navbar-toggler-icon"></span>
-            </button>
+            </button> */}
             <div
-              className="collapse navbar-collapse"
+              // className="collapse navbar-collapse"
               id="navbarSupportedContent"
             >
-              <ul className="navbar-nav ml-auto"></ul>
+              {/* <ul className="navbar-nav ml-auto"></ul> */}
               <div style={{ flex: 1 }} />
               <div className="my-2 my-lg-0 mr-0">
                 <a
@@ -51,7 +51,7 @@ const Layout = ({ children }) => {
           </div>
         </nav>
       </header>
-      {children}
+      <div style={{ flex: 1 }}>{children}</div>
       <div className="top-footer">
         <div className="w-100">
           <div className="row">
@@ -145,6 +145,15 @@ const Layout = ({ children }) => {
                       Terms and Conditions
                     </Link>
                   </p>
+                  <p>
+                    <Link
+                      className="link"
+                      style={{ color: '#808080' }}
+                      to="/blog"
+                    >
+                      Blogs
+                    </Link>
+                  </p>
                 </div>
               </div>
             </div>
@@ -209,7 +218,7 @@ const Layout = ({ children }) => {
           </div>
         </div>
       </footer>
-    </>
+    </div>
   );
 };
 
