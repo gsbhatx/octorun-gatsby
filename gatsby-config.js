@@ -15,6 +15,7 @@ module.exports = {
       { path: '/fulfilment-refund-policy', name: 'Fulfillment Policy' },
       { path: '/privacy-policy', name: 'Privacy Policy' },
       { path: '/contactUs', name: 'Contact Us' },
+      { path: '/blogs', name: 'Blogs' },
     ],
     // categories: [
     //   { slug: 'confidence', name: 'Confidence' },

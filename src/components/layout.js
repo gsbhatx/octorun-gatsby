@@ -93,7 +93,7 @@ const Layout = ({ children }) => {
                     <a
                       className="link"
                       style={{ color: '#808080' }}
-                      href=""
+                      href="https://teacher-octorun.firebaseapp.com/"
                       target="_blank"
                     >
                       Teacher Login
@@ -110,14 +110,13 @@ const Layout = ({ children }) => {
                     </a>
                   </p>
                   <p>
-                    <a
+                    <Link
                       className="link"
                       style={{ color: '#808080' }}
-                      href=""
-                      target="_blank"
+                      to="/contactUs"
                     >
                       Support
-                    </a>
+                    </Link>
                   </p>
                 </div>
                 <div className="col-lg-5">
@@ -148,13 +147,14 @@ const Layout = ({ children }) => {
                     </Link>
                   </p>
                   <p>
-                    <Link
+                    <a
                       className="link"
                       style={{ color: '#808080' }}
-                      to="/blog"
+                      href="https://octorunblogs.wordpress.com/"
+                      target="_blank"
                     >
                       Blogs
-                    </Link>
+                    </a>
                   </p>
                 </div>
               </div>
@@ -198,7 +198,7 @@ const Layout = ({ children }) => {
                 </a>
                 <a
                   className="link"
-                  href="https://www.instagram.com/admin.octorun/"
+                  href="https://www.instagram.com/octorun1/"
                   target="_blank"
                 >
                   <img src={'/instagram_logo.png'} alt="facebook" />
